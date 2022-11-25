@@ -1,0 +1,4 @@
+
+
+def compactar():
+    print('compactar')

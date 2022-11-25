@@ -1,0 +1,4 @@
+
+
+def consulta():
+    print('consulta')
