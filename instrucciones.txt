@@ -6,7 +6,8 @@ Escriba un programa que implemente el registro de nuevas obras de arte para el M
  
 En la Base de Datos se registrará la siguiente información para cada Pintura:
  
-Cota: Código que representa cada una de las pinturas registradas en la Galería, conformada por 4 letras y 4 dígitos (Ejemplo de una Cota: ABCD1234). Cada pintura tiene un código único.
+Cota: Código que representa cada una de las pinturas registradas en la Galería, conformada por 4 letras y 4 dígitos 
+(Ejemplo de una Cota: ABCD1234). Cada pintura tiene un código único.
  
 Nombre: Nombre de la pintura de máximo 30 caracteres. No puede haber varias obras registradas con el mismo nombre.
  
@@ -28,11 +29,13 @@ Nombre. Utilizando un índice para ello.
  
 III Puesta en Mantenimiento:
  
-Se debe poder colocar una pintura a un estado de "EN MANTENIMIENTO". Para indicar la pintura a pasar a este estado, se debe permitir buscarla tanto por su Cota como por su Nombre.
+Se debe poder colocar una pintura a un estado de "EN MANTENIMIENTO". Para indicar la pintura a pasar a este estado, 
+se debe permitir buscarla tanto por su Cota como por su Nombre.
  
 IV Puesta en Exhibición:
  
-Se debe poder colocar una pintura a un estado de "EN EXHIBICIÓN". Para indicar la pintura a pasar a este estado, se debe permitir buscarla tanto por su Cota como por su Nombre.
+Se debe poder colocar una pintura a un estado de "EN EXHIBICIÓN". Para indicar la pintura a pasar a este estado, 
+se debe permitir buscarla tanto por su Cota como por su Nombre.
  
 V Eliminación:
  

@@ -1,5 +1,5 @@
 import sys
-from funciones import clear
+from funciones import clear, load_db
 from insercion import insercion
 from consulta import consulta
 from gestion import gestion
@@ -8,11 +8,12 @@ from compactar import compactar
 
 def main():
     #importar base de datos
-
+    file = load_db()
 
     #menu principal
     while True:
         clear()
+
         print('\n********LOUVRE ADMINISTRATOR********\n')
         print('Escoja el número de la operación que desea realizar\n')
         print('1===> Registrar pintura \n2===> Buscar pintura \n3===> Gestionar pinturas \n4===> Compactar base de datos \n5===> Salir el sistema')
@@ -36,6 +37,7 @@ def main():
 
         elif opcion == 4:
             compactar()
+
         else:
             sys.exit()
 
