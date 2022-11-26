@@ -10,6 +10,8 @@ def main():
     #importar base de datos
     file = load_db()
 
+    
+
     #menu principal
     while True:
         clear()
