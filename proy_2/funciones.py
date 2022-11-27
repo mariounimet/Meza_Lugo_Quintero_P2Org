@@ -1,4 +1,5 @@
 import os
+import json
 
 #limpia el terminal
 def clear():  #codigo de función obtenido de: https://micro.recursospython.com/recursos/como-limpiar-la-consola.html
@@ -8,8 +9,11 @@ def clear():  #codigo de función obtenido de: https://micro.recursospython.com/
         os.system("clear")
 
 def load_db():
-    file = open('proy_2/db.txt', 'r')
+    with open('proy_2/db.json') as db:
+        database = json.load(db)
+    return database
 
-    
-
-    return file
+def save_db(db):
+    database = json.dumps(db, indent=4)
+    with open('proy_2/db.json', 'w') as file:
+        file.write(database)

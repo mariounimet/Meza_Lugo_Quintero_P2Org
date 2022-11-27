@@ -1,5 +1,5 @@
 import sys
-from funciones import clear, load_db
+from funciones import clear, load_db, save_db
 from insercion import insercion
 from consulta import consulta
 from gestion import gestion
@@ -8,10 +8,8 @@ from compactar import compactar
 
 def main():
     #importar base de datos
-    file = load_db()
-
+    db = load_db()
     
-
     #menu principal
     while True:
         clear()
