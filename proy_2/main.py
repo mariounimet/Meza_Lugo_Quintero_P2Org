@@ -7,17 +7,17 @@ from compactar import compactar
 
 
 def main():
-    #importar base de datos
+    # importar base de datos
     db = load_db()
-    
-    #menu principal
+
+    # menu principal
     while True:
-        clear()
+        # clear()
 
         print('\n********LOUVRE ADMINISTRATOR********\n')
         print('Escoja el número de la operación que desea realizar\n')
         print('1===> Registrar pintura \n2===> Buscar pintura \n3===> Gestionar pinturas \n4===> Compactar base de datos \n5===> Salir el sistema')
-        
+
         try:
             opcion = int(input('\n\n===>'))
         except:
@@ -27,7 +27,7 @@ def main():
         if opcion < 1 or opcion > 5:
             input('opcion inválida\npresione ENTER para volver al menú principal')
         elif opcion == 1:
-            insercion()
+            insercion(db)
 
         elif opcion == 2:
             consulta()
@@ -40,5 +40,6 @@ def main():
 
         else:
             sys.exit()
+
 
 main()

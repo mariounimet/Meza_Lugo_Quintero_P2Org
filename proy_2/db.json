@@ -1,10 +1,17 @@
 [
     {
-        "codigo": "123",
+        "cota": "ABCD1345",
         "nombre": "hola"
     },
     {
-        "codigo": "14523",
+        "cota": "abce5643",
         "nombre": "hosoososos"
+    },
+    {
+        "cota": "FGHJ5438",
+        "nombre": "probandonombrepintura",
+        "precio": 98,
+        "status": "EN EXHIBICI\u00d3N",
+        "deleted": false
     }
 ]
