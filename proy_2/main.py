@@ -9,12 +9,12 @@ from compactar import compactar
 def main():
     # importar base de datos
     db = load_db()
-    auxiliares = crear_listas(db)
-    aux_cota = auxiliares[0]
-    aux_nombre = auxiliares[1]
+    # auxiliares = crear_listas(db)
+    # aux_cota = auxiliares[0]
+    # aux_nombre = auxiliares[1]
     # menu principal
     while True:
-        clear()
+        # clear()
 
         print('\n********LOUVRE ADMINISTRATOR********\n')
         print('Escoja el número de la operación que desea realizar\n')
@@ -38,7 +38,7 @@ def main():
             gestion()
 
         elif opcion == 4:
-            compactar()
+            compactar(db)
 
         else:
             sys.exit()

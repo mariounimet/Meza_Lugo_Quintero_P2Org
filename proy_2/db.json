@@ -1,17 +1,30 @@
 [
-    {
-        "cota": "ABCD1345",
-        "nombre": "hola"
-    },
-    {
-        "cota": "abce5643",
-        "nombre": "hosoososos"
-    },
-    {
-        "cota": "FGHJ5438",
-        "nombre": "probandonombrepintura",
-        "precio": 98,
-        "status": "EN EXHIBICI\u00d3N",
-        "deleted": false
-    }
+  {
+    "cota": "PRBA9877",
+    "nombre": "Prueba9877",
+    "precio": 80,
+    "status": "EN MANTENIMIENTO",
+    "deleted": true
+  },
+  {
+    "cota": "abcd5890",
+    "nombre": "pruebamil",
+    "precio": 30,
+    "status": "EN EXHIBICION",
+    "deleted": false
+  },
+  {
+    "cota": "asdf5748",
+    "nombre": "asdasdasdasd",
+    "precio": 10,
+    "status": "EN EXHIBICION",
+    "deleted": true
+  },
+  {
+    "cota": "ASCM5730",
+    "nombre": "asdasdasdasdsad",
+    "precio": 40,
+    "status": "EN EXHIBICION",
+    "deleted": true
+  }
 ]
