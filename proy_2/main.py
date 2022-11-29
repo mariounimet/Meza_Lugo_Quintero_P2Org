@@ -1,7 +1,7 @@
 import sys
-from funciones import clear, load_db, save_db, crear_listas
+from funciones import clear, load_db, save_db, crear_listas, ordenar
 from insercion import insercion
-from consulta import consulta
+from consulta import buscar
 from gestion import gestion
 from compactar import compactar
 
@@ -12,9 +12,13 @@ def main():
     auxiliares = crear_listas(db)
     aux_cota = auxiliares[0]
     aux_nombre = auxiliares[1]
+
+    aux_cota = ordenar(aux_cota, "cota")
+    aux_nombre = ordenar(aux_nombre, "nombre")
+
     # menu principal
     while True:
-        clear()
+        #clear()
 
         print('\n********LOUVRE ADMINISTRATOR********\n')
         print('Escoja el número de la operación que desea realizar\n')
@@ -29,10 +33,13 @@ def main():
         if opcion < 1 or opcion > 5:
             input('opcion inválida\npresione ENTER para volver al menú principal')
         elif opcion == 1:
-            insercion(db)
+            inserciones = insercion(db, aux_cota, aux_nombre)
+            db = inserciones[0]
+            aux_cota = inserciones[1]
+            aux_nombre = inserciones[2]
 
         elif opcion == 2:
-            consulta()
+            buscar(db, aux_cota, aux_nombre)
 
         elif opcion == 3:
             gestion()

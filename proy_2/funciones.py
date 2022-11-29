@@ -35,16 +35,21 @@ def crear_listas(dbe):
                         "index":cont}
             codigo_lista.append(dic_cod)
             nombre_lista.append(dic_name)
-        lista_tot.append(codigo_lista and nombre_lista)
+        lista_tot.append(codigo_lista)
+        lista_tot.append(nombre_lista)
     else:
-        lista_tot.append(codigo_lista and nombre_lista)
+        lista_tot.append(codigo_lista)
+        lista_tot.append(nombre_lista)
     return lista_tot
+
+def ordenar(lista, clave):
+    return sorted(lista, key=lambda pintura: pintura[clave])
 
 def consulta(lista, clave, parametroBuscado):
     if len(lista) == 0:
         return [False, []]
     if len(lista) == 1:
-        if lista[0]["clave"] == parametroBuscado:
+        if lista[0][clave] == parametroBuscado:
             return [True, lista[0]]
         else:
             return [False, []]

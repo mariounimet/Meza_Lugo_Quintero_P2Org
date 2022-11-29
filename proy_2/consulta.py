@@ -1,4 +1,4 @@
 
 
-def consulta():
+def buscar():
     print('consulta')

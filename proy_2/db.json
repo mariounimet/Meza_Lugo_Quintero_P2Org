@@ -1,17 +1,37 @@
 [
     {
-        "cota": "ABCD1345",
-        "nombre": "hola"
+        "cota": "AAAA1232",
+        "nombre": "puente",
+        "precio": 314.3,
+        "status": "M",
+        "deleted": false
     },
     {
-        "cota": "abce5643",
-        "nombre": "hosoososos"
+        "cota": "FFFF5543",
+        "nombre": "edificio",
+        "precio": 100.0,
+        "status": "E",
+        "deleted": false
     },
     {
-        "cota": "FGHJ5438",
-        "nombre": "probandonombrepintura",
-        "precio": 98,
-        "status": "EN EXHIBICI\u00d3N",
+        "cota": "CCCC9932",
+        "nombre": "lluvia",
+        "precio": 134.0,
+        "status": "E",
+        "deleted": false
+    },
+    {
+        "cota": "AAAA5232",
+        "nombre": "casas",
+        "precio": 43.0,
+        "status": "E",
+        "deleted": false
+    },
+    {
+        "cota": "GDKD5321",
+        "nombre": "pasta",
+        "precio": 555.32,
+        "status": "M",
         "deleted": false
     }
 ]
