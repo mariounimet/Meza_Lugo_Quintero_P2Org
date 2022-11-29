@@ -97,7 +97,7 @@ def insercion(dbe, auxCota, auxNombre):
         if status_input == 1:
             status = 'E'
         else:
-            status = 'M'
+            status = 'EN MANTENIMIENTO'
 
         # DELETED
 
@@ -105,11 +105,11 @@ def insercion(dbe, auxCota, auxNombre):
 
         # Agregar a la bde
         pintura = {
-            "cota": cota,
+            "cota": cota.upper(),
             "nombre": nombre,
             "precio": precio,
             "status": status,
-            "deleted": deleted,
+            "deleted": False,
         }
 
         dbe.append(pintura)

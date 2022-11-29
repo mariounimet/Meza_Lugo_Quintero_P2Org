@@ -18,7 +18,7 @@ def main():
 
     # menu principal
     while True:
-        #clear()
+        clear()
 
         print('\n********LOUVRE ADMINISTRATOR********\n')
         print('Escoja el número de la operación que desea realizar\n')
@@ -45,7 +45,7 @@ def main():
             gestion()
 
         elif opcion == 4:
-            compactar()
+            compactar(db)
 
         else:
             sys.exit()
