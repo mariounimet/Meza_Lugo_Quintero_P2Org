@@ -47,7 +47,7 @@ def main():
                 input("La pintura no fue encontrada\nPresione ENTER para continuar")
 
         elif opcion == 3:
-            gestion()
+            db = gestion(db, aux_cota, aux_nombre)
 
         elif opcion == 4:
             db = compactar(db)
