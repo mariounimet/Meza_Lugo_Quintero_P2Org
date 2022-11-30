@@ -44,7 +44,7 @@ def main():
             input("presione ENTER para continuar")
 
         elif opcion == 3:
-            gestion()
+            db = gestion(db, aux_cota, aux_nombre)
 
         elif opcion == 4:
             compactar(db)
