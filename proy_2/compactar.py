@@ -35,3 +35,5 @@ def compactar(db):
             aux.clear()
 
             # TODO - Codigo para la reorganización de nuestras listas indexadas
+        input("\nPresione ENTER para continuar")
+        return db

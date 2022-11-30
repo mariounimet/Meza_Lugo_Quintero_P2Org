@@ -1,4 +1,4 @@
-from funciones import clear, consulta, imprimir_pintura
+from funciones import clear, consulta
 
 def buscar(db, auxCota, auxNombre):
     clear()
@@ -24,6 +24,7 @@ def buscar(db, auxCota, auxNombre):
                 return pintura[1]["index"]
             else:
                 input("Pintura no encontrada\npresione ENTER continuar")
+                return -1
         elif opcion == 2:
             nombre = input("Ingrese el nombre de la pintura buscada: ")
             pintura = consulta(auxNombre, "nombre", nombre)
@@ -31,6 +32,6 @@ def buscar(db, auxCota, auxNombre):
                 return pintura[1]["index"]
             else:
                 input("Pintura no encontrada\npresione ENTER continuar")
+                return -1
         else:
             break
-        input("Presione ENTER para continuar")

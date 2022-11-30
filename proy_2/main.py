@@ -40,15 +40,23 @@ def main():
 
         elif opcion == 2:
             indice = buscar(db, aux_cota, aux_nombre)
-            imprimir_pintura(db[indice])
-            input("presione ENTER para continuar")
+            if indice != -1:
+                imprimir_pintura(db[indice])
+                input("presione ENTER para continuar")
+            else:
+                input("La pintura no fue encontrada\nPresione ENTER para continuar")
 
         elif opcion == 3:
             gestion()
 
         elif opcion == 4:
-            compactar(db)
+            db = compactar(db)
+            auxiliares = crear_listas(db)
+            aux_cota = auxiliares[0]
+            aux_nombre = auxiliares[1]
 
+            aux_cota = ordenar(aux_cota, "cota")
+            aux_nombre = ordenar(aux_nombre, "nombre")
         else:
             sys.exit()
 
