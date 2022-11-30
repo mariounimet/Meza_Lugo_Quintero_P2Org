@@ -1,12 +1,5 @@
 [
     {
-        "cota": "AAAA1232",
-        "nombre": "puente",
-        "precio": 314.3,
-        "status": "M",
-        "deleted": false
-    },
-    {
         "cota": "FFFF5543",
         "nombre": "edificio",
         "precio": 100.0,
@@ -14,17 +7,10 @@
         "deleted": false
     },
     {
-        "cota": "CCCC9932",
-        "nombre": "lluvia",
-        "precio": 134.0,
-        "status": "E",
-        "deleted": false
-    },
-    {
         "cota": "AAAA5232",
         "nombre": "casas",
         "precio": 43.0,
-        "status": "E",
+        "status": "M",
         "deleted": false
     },
     {

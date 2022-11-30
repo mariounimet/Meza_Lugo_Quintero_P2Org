@@ -41,10 +41,11 @@ def main():
         elif opcion == 2:
             indice = buscar(db, aux_cota, aux_nombre)
             if indice != -1:
+                print("Pintura encontrada:\n")
                 imprimir_pintura(db[indice])
                 input("presione ENTER para continuar")
             else:
-                input("La pintura no fue encontrada\nPresione ENTER para continuar")
+                continue
 
         elif opcion == 3:
             db = gestion(db, aux_cota, aux_nombre)
@@ -58,7 +59,7 @@ def main():
             aux_cota = ordenar(aux_cota, "cota")
             aux_nombre = ordenar(aux_nombre, "nombre")
         else:
+            save_db(db)
             sys.exit()
-
 
 main()
