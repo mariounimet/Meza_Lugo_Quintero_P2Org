@@ -1,5 +1,5 @@
 import sys
-from funciones import clear, load_db, save_db, crear_listas, ordenar
+from funciones import clear, load_db, save_db, crear_listas, ordenar, imprimir_pintura
 from insercion import insercion
 from consulta import buscar
 from gestion import gestion
@@ -39,7 +39,9 @@ def main():
             aux_nombre = inserciones[2]
 
         elif opcion == 2:
-            buscar(db, aux_cota, aux_nombre)
+            indice = buscar(db, aux_cota, aux_nombre)
+            imprimir_pintura(db[indice])
+            input("presione ENTER para continuar")
 
         elif opcion == 3:
             gestion()

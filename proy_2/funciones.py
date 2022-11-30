@@ -49,6 +49,7 @@ def crear_listas(dbe):
                         "index": cont}
             codigo_lista.append(dic_cod)
             nombre_lista.append(dic_name)
+            cont += 1
         lista_tot.append(codigo_lista)
         lista_tot.append(nombre_lista)
     else:
